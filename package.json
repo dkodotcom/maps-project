@@ -1,0 +1,17 @@
+{
+  "name": "gmapsproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "style": "standard",
+    "build": "browserify test.js > testbundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "standard": "^10.0.2",
+    "tape": "^4.6.3"
+  }
+}
