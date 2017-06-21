@@ -1,22 +1,14 @@
 /* global google */
-// var service = new google.maps.places.PlacesService(map)
-// service.nearbySearch(request, callback)
 
-function initMap () {
-  var uluru = {lat: -25.363, lng: 131.044}
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: uluru
-  })
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  })
-}
+initAutocomplete()
+var map
+var markers
+var list = []
+
 // This adds a search box to a map, using Places autocomplete feature
 // People can enter geographical searches, which will return pick list containing predicted search items
 function initAutocomplete () {
-  var map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -25.363, lng: 131.044},
     zoom: 8,
     mapTypeId: 'roadmap'
@@ -29,7 +21,7 @@ function initAutocomplete () {
   map.addListener('bounds_changed', function () {
     searchBox.setBounds(map.getBounds())
   })
-  var markers = []
+  markers = []
   // listens for the event fired when the user selects a prediction and retrieves more details for that place
   searchBox.addListener('places_changed', function () {
     var places = searchBox.getPlaces()
@@ -69,6 +61,21 @@ function initAutocomplete () {
         bounds.extend(place.geometry.location)
       }
     })
+    initMarkerClick()
     map.fitBounds(bounds)
   })
 }
+
+// after search, will create markers, and then listen for a click
+function initMarkerClick() {
+  markers.forEach(function onClick(marker){
+    marker.addListener('click', function() {
+      console.log(marker.title)
+      list.push(marker)
+    })
+  })
+}
+
+
+
+
