@@ -1,5 +1,11 @@
 /* global google */
 
+var config = {
+    "mapsApiKey": "",
+    "firebaseApiKey": "",
+    "firebaseDatabaseURL": "",
+}
+
 initAutocomplete()
 var map
 var markers

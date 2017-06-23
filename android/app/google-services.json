@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1069364471847",
+    "firebase_url": "https://notional-device-170318.firebaseio.com",
+    "project_id": "notional-device-170318",
+    "storage_bucket": "notional-device-170318.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069364471847:android:42b534e294e4d49c",
+        "android_client_info": {
+          "package_name": "com.maptrix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069364471847-1q69hvkrilp6oqmq3cnfteuu71btvpfv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7T3iorQlRftHBo_B-o6hqi_-LT8fqv78"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
