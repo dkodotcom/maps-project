@@ -2,7 +2,7 @@
 
 ## About
 
- My hopes for this project is to create an app to prioritize and/or remind me of my to-do's with respect to my geographic location. Because I travel frequently, a problem I often face is being disorganized in running errands, or even forgetting a step along the way to another destination. I hope that this app will facilitate my every day needs, maybe perhaps my friends as well :)
+ My hopes for this project is to create an app to prioritize and/or remind me of my to-do's with respect to my geographic location. Because I travel frequently, a problem I often face is being disorganized in running errands, or even forgetting a step along the way to another destination. This app will be a geo-context to do list for anyone who could benefit from it. 
 
 ## Developing
 
